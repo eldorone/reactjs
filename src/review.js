@@ -11,4 +11,7 @@
 
 // Second Lesson
 
-//props, components
+// props, components
+// export import
+// props child
+// components

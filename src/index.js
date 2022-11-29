@@ -1,17 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Student from './Student.jsx'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const studentsInfo = [
+  { id: 18012704, name: 'Eldor' },
+  { id: 18012705, name: 'Cris' },
+  { id: 18012706, name: 'Leonel' },
+  { id: 18012707, name: 'Jamal' },
+  { id: 18012708, name: 'Gavi' },
+  { id: 18012709, name: 'Diogo' },
+  { id: 18012710, name: 'Alex' }
+]
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    {studentsInfo.map((value) => {
+      return <Student data={value} />;
+    })}
+  </React.StrictMode>,
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  document.getElementById('root')
+
+);
