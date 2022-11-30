@@ -6,3 +6,12 @@
 // ReactDOM.render()
 // jsx
 // import
+
+//**************************************************
+
+// Second Lesson
+
+// props, components
+// export import
+// props child
+// components

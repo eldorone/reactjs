@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  box-sizing: border-box;
+  padding: 100px 50px;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +13,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  width: 100px;
+  height: 200px;
 }
